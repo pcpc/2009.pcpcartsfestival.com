@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: none;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* --- :[ Clear Fix Class ]: --- */
+
+.clearfix {
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  display: inline-table;
+}
+
+/* Hides from IE-mac \*/
+
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+/* End hide from IE-mac */
+
+a {
+  color: #b5d432;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* --- :[ NAVIGATION ]: --- */
+
+#navigation {
+  border-top: 1px #9D8A6F dotted;
+  border-bottom: 1px #9D8A6F dotted;
+  margin: 0 42px;
+  ul {
+    margin: 10px 0;
+    font-size: 14px;
+    li {
+      display: inline;
+      margin: 0 10px;
+      padding: 5px;
+      text-align: center;
+      vertical-align: middle;
+      &.first {
+        margin-left: 0;
+      }
+      &:hover {
+        border-top: solid 5px #b5d432;
+        padding-top: 0;
+        a {
+          text-decoration: none;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+body {
+  background: #b5d432 url(images/artsFestBg.jpg) top left fixed no-repeat;
+}
+
+.fineprint {
+  font-size: 80%;
+  color: #9D8A6F;
+}
+
+#wrap {
+  width: 975px;
+  margin: 10px auto;
+}
+
+#content {
+  color: #9D8A6F;
+  padding: 25px 42px;
+  margin: 0;
+  ul, ol {
+    list-style-position: inside;
+  }
+  li {
+    margin: 5px 0;
+  }
+  div {
+    &.boxLeft {
+      width: 540px;
+      float: left;
+      margin: 0 20px 0 0;
+    }
+    &.boxRight {
+      width: 218px;
+      float: left;
+      margin: 0 0 0 20px;
+      padding: 20px;
+      background: #635643 url(images/BorderTop.png) center bottom repeat-x;
+      .boxTop {
+        background: #635643 url(images/BorderBottom.png) center top repeat-x;
+        margin: -20px -20px 0 -20px;
+        padding: 0;
+      }
+      h2 {
+        color: #9D8A6F;
+      }
+    }
+  }
+}
+
+#pageBorderTop, #pageBorderBottom {
+  height: 20px;
+  width: 964px;
+  margin: 0 auto;
+}
+
+#pageBorderTop {
+  background: url(images/BorderTop.png) center bottom repeat-x;
+}
+
+#pageBorderBottom {
+  background: url(images/BorderBottom.png) center top repeat-x;
+}
+
+div {
+  &#inside {
+    width: 975px;
+    margin: 0;
+    background: url(images/borders.png) center top repeat-y;
+  }
+  &#container {
+    background: #221E1F;
+    margin: 0 auto;
+    width: 935px;
+  }
+}
+
+#masthead {
+  height: 306px;
+  background: url(images/Parables.png) top center no-repeat;
+}
+
+.fullWidth {
+  width: 935px;
+}
+
+#pageBottom {
+  height: 374px;
+  background: url(images/People.png) bottom center no-repeat;
+}
+
+/* --- :[ Typography ]: --- */
+
+#content {
+  color: #C6BBAC;
+}
+
+h1, h2, h3, h4 {
+  margin: 5px 0 10px 0;
+}
+
+p {
+  margin: 5px 0 15px 0;
+  font-size: 18px;
+}
+
+blockquote {
+  margin: 20px 50px;
+  font-style: italic;
+}
+
+.rules strong {
+  color: #DBD4CA;
+}
+
+h2, h3, h4 {
+  color: #635643;
+}
+
+h2 {
+  border-bottom: dotted #635643 3px;
+  margin: 20px 0 10px 0;
+  text-align: left;
+}
+
+/* --- :[ Juror ]: --- */
+
+.juror-info img, .concert img {
+  float: right;
+  border: #ffffff solid 2px;
+  margin: 0 0 0 50px;
+}
+
+/* --- :[ west dallas arts project ]: --- */
+
+.westDallas img {
+  float: right;
+  margin: 0 0 0 50px;
+}
+
+/* --- :[ dana-gioia page - audio box ]: --- */
+
+.box {
+  background: #4F4648;
+  margin: 7px 0;
+  padding: 8px 15px;
+}
